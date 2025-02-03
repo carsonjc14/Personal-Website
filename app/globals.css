@@ -1,21 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #efecdb;
+  --foreground: #545454;
+  --stripe-red: #A4273A;
+  --stripe-orange: #F08C40;
+  --stripe-yellow: #F4BC44;
+  --stripe-green: #7AB782;
+  --stripe-blue: #55A69D;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #545454;
+    --foreground: #efecdb;
   }
 }
 
 body {
-  color: var(--foreground);
+  background: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+h1 {
+  font-family: "Doto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15vh;
+  font-variation-settings: "Rond" 0;
+  color: var(--foreground);
+}
+
+h2 {
+  color: var(--foreground)
+}
+
+.stripe-red{
+  background: var(--stripe-red)
+}
+.stripe-orange{
+  background: var(--stripe-orange)
+}
+.stripe-yellow {
+  background: var(--stripe-yellow)
+}
+.stripe-green {
+  background: var(--stripe-green)
+}
+.stripe-blue {
+  background: var(--stripe-blue)
+}
+
+.stripe-space {
+  margin-bottom: 10px;
+}
+
+.top-nav-button {
+   /* padding: 1em 1em;  */
+  /* background-color: var(--background);
+  border: none;
+  color: var(--foreground); */
+  border-radius: 1000px;
+
+  
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  margin: 5px;
+  height: 50%;
+}
+
+.top-nav-button .inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--background);
+  border-radius: 1000px;
+  color: var(--foreground);
+}
+
+.top-nav-button::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to bottom right,red, red, orange, yellow, green, blue, blue);
+  
+  height: 100px;
+  width: 120%;
+  position: absolute;
+  /* border-radius: 1000px; */
+
+  
+  
+  z-index: 0;
+}
+
+
+.top-nav-button:hover:before {
+  z-index: 1;
+
+  
+  animation: rotate 5s linear infinite;
+}
+.top-nav-button:hover {
+  box-shadow: -40 0 500px var(--stripe-red),
+    -20 0 100px var(--stripe-yellow);
+}
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+
+  to {transform: rotate(360deg);}
+  
 }
