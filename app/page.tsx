@@ -132,7 +132,7 @@ export default function Home() {
 
               <p className="mt-10">
                 My favorite thing to code is front-end for websites. I think its the perfect intersection of Computer Science and Creativity.
-                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, React, and I&apos;'ve taken a web development course at UGA.
+                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, React, and I&apos;ve taken a web development course at UGA.
                 I also have experience in Java, C/C++, MongoDB, and a smattering of python.
               </p>
             </div>
