@@ -1,5 +1,6 @@
 'use client'
 
+import "./globals.css"
 
 import Image from "next/image";
 import {useRef, useState} from 'react';
@@ -121,10 +122,10 @@ export default function Home() {
         <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
            
           <div className="h-full flex items-center">
-            <Image src="images/pol-selfie.png" alt="a selfie of me" className="w-[30%] rotate-[-10deg]"/>
+            <Image src="/images/pol-selfie.png" alt="a selfie of me" className="w-[30%] rotate-[-10deg]" width={500} height={0}/>
 
             <div className="ml-10">
-              <p>
+              <p className="text-[var(--foreground)]">
                 Hi, my name's Carson. I'm a senior at UGA studying computer science with plans to graduate in may. 
                 In my free time I like to read, exercise, build legos, collect various knick knacks, and learn new things.
               </p>
@@ -160,7 +161,7 @@ export default function Home() {
           
           <div className="flex items-center h-full">
 
-            <Image src="images/pol-redcoats.png" alt="me on the field as a Redcoat" className="w-[35%] rotate-[-15deg] "/>
+            <Image src="/images/pol-redcoats.png" alt="me on the field as a Redcoat" className="w-[35%] rotate-[-15deg] " width={500} height={0}/>
             
             <div className=" mr-6">
 
@@ -175,7 +176,7 @@ export default function Home() {
               
               <p dir="rtl" className="ml-10">
                 <a href="https://devdogs.uga.edu" target="_blank">
-                <Image src="images/devdog.png" alt="DevDogs logo" className="w-12" />
+                <Image src="/images/devdog.png" alt="DevDogs logo" className="w-12" width={100} height={0}/>
                 </a>
                 
 

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
 
@@ -47,8 +47,10 @@ h2 {
 }
 
 p {
+  color: var(--foreground);
   font-family: "Pixelify Sans", serif;
   font-size: large;
+  
 }
 .blink-text {
   animation: blink 1.5s infinite;
@@ -76,74 +78,7 @@ p {
   background: var(--stripe-blue)
 }
 
-/* .stripe-space {
-  margin-bottom: 10px;
-}
 
-
-.top-nav-button {
-   padding: 1em 1em;  */
-  /* background-color: var(--background);
-  border: none;
-  color: var(--foreground);
-  border-radius: 1000px;
-
-  
-
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 50%;
-  margin: 5px;
-  height: 50%;
-}
-
-.top-nav-button .inner {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  margin: 5px;
-  padding: 10px;
-  background-color: var(--background);
-  border-radius: 1000px;
-  color: var(--foreground);
-}
-
-.top-nav-button::before{
-  content: '';
-  display: block;
-  background: linear-gradient(to bottom right,red, red, orange, yellow, green, blue, blue);
-  
-  height: 100px;
-  width: 120%;
-  position: absolute;
-  /* border-radius: 1000px; */
-
-  
-  
-  /* z-index: 0;
-}  */
-
-
-/* .top-nav-button:hover:before {
-  z-index: 1;
-
-  
-  animation: rotate 5s linear infinite;
-}
-.top-nav-button:hover {
-  box-shadow: -40 0 500px var(--stripe-red),
-    -20 0 100px var(--stripe-yellow);
-}
-
-@keyframes rotate {
-  from {transform: rotate(0);}
-
-  to {transform: rotate(360deg);}
-  
-} */
 
 .tv-button {
   width: 4em;
@@ -151,7 +86,8 @@ p {
   border-radius: 10px;
   border: none;
   outline: none;
-  font-family: Montserrat;
+  font-family: "Montserrat";
+  font-size: px;
   transition: 0.1s ease-in-out;
   background-color: #c7c3c0;
   box-shadow: rgba(0, 0, 0, 0.424) 10px 10px 8px,

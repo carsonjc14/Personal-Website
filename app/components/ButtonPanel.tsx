@@ -1,19 +1,9 @@
 
 import { useState } from "react";
 
-    const ButtonPanel = (props) => {
-
-    const [homeLight, setHomeLight] = useState("btn-home");
-    const [redLight, setRedLight] = useState("btn-holder");
-    const [orangeLight, setOrangeLight] = useState("btn-holder");
-    const [yellowLight, setYellowLight] = useState("btn-holder");
-    const [blueLight, setBlueLight] = useState("btn-holder");
-  
-  
+const ButtonPanel = (props) => {
 
     return (
-
-      
 
         <div className="flex flex-col gap-4 items-center my-auto row-start-1 col-start-4 mx-auto aspecct-[2/9] w-[16vw] ">
             <div onClick={() => props.changeStyle("Home")} className={props.homeLight} ><button className="tv-button">HOME</button></div>
