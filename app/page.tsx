@@ -75,13 +75,13 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col flex-none">
+    <div className="grid">
          
           {/* Home Page */}
           <section ref={homeRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
 
             {/* Content */}
-            <div className="min-h-[400px]  row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-[15px] tv-border">
+            <div className="min-h-[400px]  row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
               
               
 
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
               
               {/* Stripes */}
-              <section dir="rtl" className="w-[100vw] rotate-[-15deg] left-[-30]">
+              <section dir="rtl" className=" sticky z-[-1] w-[100vw] rotate-[-15deg] left-[-30]">
               
                 <div className="stripe-red w-[120vw] h-6"> </div>                              
                 <div className="stripe-orange mt-1 w-[120vw] h-6"> </div>                              
@@ -119,7 +119,7 @@ export default function Home() {
         
       {/* About Page */}
       <section ref={aboutRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
+        <div className="min-h-[400px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] tv-border">
            
           <div className="h-full flex items-center">
             <Image src="/images/pol-selfie.png" alt="a selfie of me" className="w-[30%] rotate-[-10deg]" width={500} height={0}/>
@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* Involvement Page */}
       <section ref={involvementRef} className="justify-center relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
+        <div className="min-h-[400px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
           
           <div className="flex items-center h-full">
 
@@ -207,9 +207,29 @@ export default function Home() {
 
       
       {/* Projects Page */}
-      <section ref={projectsRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
-          About Me
+      <section ref={projectsRef} className="overflow-hidden relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[1000px] flex">
+        <div className=" min-h-[400px] md:min-h-[200px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
+          
+          <div className="flex flex-col justify-center mx-10 h-[100%] ">
+            <h3 className="text-[var(--stripe-red)]">Pokémon Team Builder - Web Programming</h3>
+            <p>
+            A CRUD Operations project with an open-ended topic. My team of 3 created a website that 
+            individual characteristics for the user to input. The user could then edit and delete their 
+            team, or view information about it. The team was saved to the database and displayed on 
+            the home screen. Front-end implemented with React along with HTML, CSS and JavaScript. 
+            Back-end implemented with Node.js, and MongoDB. Team collaboration with git.
+            </p>
+            <h3 className="mt-[10%] text-blue-900">Cinema E-Booking System - Software Engineering</h3>
+            <p>
+            A full-stack term project with a scrum-based workflow. My team of 4 built a website that 
+            allowed users to book movies, which included picking showtimes and selecting seats. I was 
+            required custom components, conditional rendering, and communication between the ticket 
+            selection page and the checkout page. Front-end implemented with React, along with HTML,
+            CSS and JavaScript. Team collaboration with git.
+            </p>
+
+          </div>
+
         </div>
         <div className="col-start-5 my-auto">
               <ButtonPanel changeStyle={changeStyle} 
@@ -225,23 +245,23 @@ export default function Home() {
 
 
       {/* Contact Page */}
-      <section ref={contactRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
+      <section ref={contactRef} className="overflow-hidden relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+        <div className="min-h-[400px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
           
-          <div className="flex flex-col items-center my-6">
+          <div className=" flex flex-col justify-space items-center my-[6%]">
 
             <h1 className="text-[500%] text-center" >Let&apos;s Work Together!</h1>
             
             {/* <section className="flex flex-col mt-20"> */}
               
-              <section className="grid grid-cols-2 w-[70%] mt-10"> 
+              <section className="grid grid-cols-2 w-[70%] mt-[10%]"> 
                 <div className="flex flex-col items-center col-start-1">
-                  <p>School</p>
+                  <p className="font-bold">School</p>
                   <button onClick={() => copyText("cjc88382@uga.edu")}><p>cjc88382@uga.edu</p></button>
                 </div>
 
                 <div className="flex flex-col items-center col-start-2">
-                  <p>Personal</p>
+                  <p className="font-bold">Personal</p>
                   <button onClick={() => copyText("carsoncooper0114@gmail.com")}><p>carsoncooper0114@gmail.com</p></button>
                 </div>
               </section>
@@ -266,7 +286,9 @@ export default function Home() {
 
           </div>
 
+          {/* <div className="absolute z-0 w-[100%] h-10 bg-[var(--stripe-red)]">
 
+          </div> */}
 
         </div>
         <div className="col-start-5 my-auto">

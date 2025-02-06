@@ -16,7 +16,7 @@ const ButtonPanel = ({changeStyle, homeLight, yellowLight, orangeLight, redLight
             <div onClick={() => changeStyle("Home")} className={homeLight} ><button className="tv-button">HOME</button></div>
             <div onClick={() => changeStyle("Red")} className={redLight} ><button className="tv-button">ABOUT</button></div>
             <div onClick={() => changeStyle("Orange")} className={orangeLight} ><button className="tv-button">CLUBS</button></div>
-            <div onClick={() => changeStyle("Yellow")} className={yellowLight} ><button className="tv-button text-[.7em]">PROJECTS</button></div>
+            <div onClick={() => changeStyle("Yellow")} className={yellowLight} ><button className="tv-button text-[.65em]">PROJECTS</button></div>
             <div onClick={() => changeStyle("Blue")} className={blueLight} ><button className="tv-button text-[.75em] ">CONTACT</button></div>
         </div>
 
