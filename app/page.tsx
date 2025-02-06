@@ -126,13 +126,13 @@ export default function Home() {
 
             <div className="ml-10">
               <p className="text-[var(--foreground)]">
-                Hi, my name's Carson. I'm a senior at UGA studying computer science with plans to graduate in may. 
+                Hi, my name&apos;s Carson. I&apos;m a senior at UGA studying computer science with plans to graduate in may. 
                 In my free time I like to read, exercise, build legos, collect various knick knacks, and learn new things.
               </p>
 
               <p className="mt-10">
                 My favorite thing to code is front-end for websites. I think its the perfect intersection of Computer Science and Creativity.
-                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, React, and I've taken a web development course at UGA.
+                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, React, and I&apos;'ve taken a web development course at UGA.
                 I also have experience in Java, C/C++, MongoDB, and a smattering of python.
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
 
               <p className="mb-4 ml-6">
                 After taking a two year break from music, I auditioned for the UGA Redcoat Band before my junior year.
-                Sdince then, I've been to every home football game, Jacksonville twice with two wins against Florida, Mercedez-Benz Stadium
+                Sdince then, I&apos;ve been to every home football game, Jacksonville twice with two wins against Florida, Mercedez-Benz Stadium
                 three times with an SEC Championship win, Miami to the Orange Bowl, and New Orleans to the Sugar Bowl.
                 I made many new friends and
                 a lifetime of memories.
@@ -230,7 +230,7 @@ export default function Home() {
           
           <div className="flex flex-col items-center my-6">
 
-            <h1 className="text-[500%] text-center" >Let's Work Together!</h1>
+            <h1 className="text-[500%] text-center" >Let&apos;s Work Together!</h1>
             
             {/* <section className="flex flex-col mt-20"> */}
               
