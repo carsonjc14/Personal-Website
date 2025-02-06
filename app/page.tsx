@@ -250,7 +250,7 @@ export default function Home() {
           
           <div className=" flex flex-col justify-space items-center my-[6%]">
 
-            <h1 className="text-[500%] text-center" >Let&apos;s Work Together!</h1>
+            <h1 className="text-[500%] text-center  " >Let&apos;s Work Together!</h1>
             
             {/* <section className="flex flex-col mt-20"> */}
               
@@ -266,9 +266,9 @@ export default function Home() {
                 </div>
               </section>
               
-              <hr className="mt-4 border border-[var(--foreground)] border-2 border-dotted w-[75%]"></hr>
+              <hr className="mt-[2%] border border-[var(--stripe-blue)] border-2 border-dotted w-[75%]"></hr>
               
-              <div className="mt-4 flex gap-4 row-start-2 col-start-1 col-span-2 items-center justify-center">
+              <div className="mt-[2%] flex gap-4 row-start-2 col-start-1 col-span-2 items-center justify-center">
                 <a href="www.linkedin.com/in/carson-cooper-04a0382ba" target="_blank">
                   <p>LinkedIn</p></a>
                   <p>|</p>
@@ -276,8 +276,8 @@ export default function Home() {
                   <p>Instagram</p></a>
               </div>
 
-              <p className="mt-2">My Full Resume</p>
-              <button onClick={dlPDF} className="border rounded-xl px-2">
+              <p className="mt-[2%]">My Full Resume</p>
+              <button onClick={dlPDF} className="border rounded-xl px-2 border-[var(--stripe-red)]">
                 <p>Download PDF</p>
               </button>
               
