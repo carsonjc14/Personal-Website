@@ -75,13 +75,13 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col flex-none">
          
           {/* Home Page */}
-          <section ref={homeRef} className=" grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+          <section ref={homeRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
 
             {/* Content */}
-            <div className="row-start-1 rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
+            <div className="min-h-[400px]  row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-[15px] tv-border">
               
               
 
@@ -118,8 +118,8 @@ export default function Home() {
 
         
       {/* About Page */}
-      <section ref={aboutRef} className=" grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
+      <section ref={aboutRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
            
           <div className="h-full flex items-center">
             <Image src="/images/pol-selfie.png" alt="a selfie of me" className="w-[30%] rotate-[-10deg]" width={500} height={0}/>
@@ -156,8 +156,8 @@ export default function Home() {
 
 
       {/* Involvement Page */}
-      <section ref={involvementRef} className=" grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
+      <section ref={involvementRef} className="justify-center relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
           
           <div className="flex items-center h-full">
 
@@ -207,8 +207,8 @@ export default function Home() {
 
       
       {/* Projects Page */}
-      <section ref={projectsRef} className=" grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
+      <section ref={projectsRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
           About Me
         </div>
         <div className="col-start-5 my-auto">
@@ -225,24 +225,24 @@ export default function Home() {
 
 
       {/* Contact Page */}
-      <section ref={contactRef} className=" grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
-        <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
+      <section ref={contactRef} className="relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
+        <div className="min-h-[400px] row-start-1 col-span-4 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] tv-border">
           
-          <div className="flex flex-col items-center my-12">
+          <div className="flex flex-col items-center my-6">
 
             <h1 className="text-[500%] text-center" >Let's Work Together!</h1>
             
             {/* <section className="flex flex-col mt-20"> */}
               
-              <section className="grid grid-cols-2 w-[70%] mt-12"> 
+              <section className="grid grid-cols-2 w-[70%] mt-10"> 
                 <div className="flex flex-col items-center col-start-1">
                   <p>School</p>
-                  <button onClick={() => copyText("cjc88382@uga.edu")}>cjc88382@uga.edu</button>
+                  <button onClick={() => copyText("cjc88382@uga.edu")}><p>cjc88382@uga.edu</p></button>
                 </div>
 
                 <div className="flex flex-col items-center col-start-2">
                   <p>Personal</p>
-                  <button onClick={() => copyText("carsoncooper0114@gmail.com")}>carsoncooper0114@gmail.com</button>
+                  <button onClick={() => copyText("carsoncooper0114@gmail.com")}><p>carsoncooper0114@gmail.com</p></button>
                 </div>
               </section>
               
@@ -250,15 +250,15 @@ export default function Home() {
               
               <div className="mt-4 flex gap-4 row-start-2 col-start-1 col-span-2 items-center justify-center">
                 <a href="www.linkedin.com/in/carson-cooper-04a0382ba" target="_blank">
-                  LinkedIn</a>
-                  |
+                  <p>LinkedIn</p></a>
+                  <p>|</p>
                 <a href="https://www.instagram.com/carson_is_cooper/" target="_blanks">
-                  Instagram</a>
+                  <p>Instagram</p></a>
               </div>
 
               <p className="mt-2">My Full Resume</p>
-              <button onClick={dlPDF} className="">
-                Download PDF
+              <button onClick={dlPDF} className="border rounded-xl px-2">
+                <p>Download PDF</p>
               </button>
               
 
