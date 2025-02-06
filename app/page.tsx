@@ -82,10 +82,7 @@ export default function Home() {
             {/* Content */}
             <div className="row-start-1 rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
               
-              {/* Old screen texture Image */}
-              {/* <div className="absolute w-[70vw] rounded-[125] overflow-hidden">
-                <img src="/images/old-screen.png" className="w-full"/>
-              </div> */}
+              
 
               {/* Header */}
               <div className="mt-[10vh] ml-6">
@@ -124,7 +121,7 @@ export default function Home() {
         <div className="row-start-1 justify-items-center rounded-[125] bg-[var(--background)]  aspect-video w-[70vw] overflow-hidden my-auto ml-[5vw] border border-[var(--stripe-orange)] border-4">
            
           <div className="h-full flex items-center">
-            <img src="images/pol-selfie.png" className="w-[30%] rotate-[-10deg]"/>
+            <Image src="images/pol-selfie.png" alt="a selfie of me" className="w-[30%] rotate-[-10deg]"/>
 
             <div className="ml-10">
               <p>
@@ -163,7 +160,7 @@ export default function Home() {
           
           <div className="flex items-center h-full">
 
-            <img src="images/pol-redcoats.png" alt="me on the field as a Redcoat" className="w-[35%] rotate-[-15deg] "/>
+            <Image src="images/pol-redcoats.png" alt="me on the field as a Redcoat" className="w-[35%] rotate-[-15deg] "/>
             
             <div className=" mr-6">
 
@@ -178,7 +175,7 @@ export default function Home() {
               
               <p dir="rtl" className="ml-10">
                 <a href="https://devdogs.uga.edu" target="_blank">
-                <img src="images/devdog.png" alt="DevDogs logo" className="w-12" />
+                <Image src="images/devdog.png" alt="DevDogs logo" className="w-12" />
                 </a>
                 
 
