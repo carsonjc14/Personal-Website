@@ -225,7 +225,7 @@ export default function Home() {
             the home screen. Front-end implemented with React along with HTML, CSS, and JavaScript. 
             Back-end implemented with Node.js and MongoDB. Team collaboration with git.
             </p>
-            <h3 className="mt-[10%] text-blue-900">Cinema E-Booking System - Course: Software Engineering</h3>
+            <h3 className="mt-[3%] text-blue-900">Cinema E-Booking System - Course: Software Engineering</h3>
             <p>
             A full-stack term project with a scrum-based workflow. My team of 4 built a website that 
             allowed users to book movies, which included picking showtimes and selecting seats. I was 
