@@ -44,11 +44,11 @@ export default function Home() {
   
   const changeStyle = (color: string) => {
     
-    setHomeLight("btn-holder");
-    setRedLight("btn-holder");
-    setOrangeLight("btn-holder");
-    setYellowLight("btn-holder");
-    setBlueLight("btn-holder");
+    setHomeLight("btn-holder border-[var(--stripe-green)]");
+    setRedLight("btn-holder border-[var(--stripe-red)]");
+    setOrangeLight("btn-holder border-[var(--stripe-orange)]");
+    setYellowLight("btn-holder border-[var(--stripe-yellow)]");
+    setBlueLight("btn-holder border-[var(--stripe-blue)]");
 
     switch (color) {
       case "Red":
@@ -126,15 +126,20 @@ export default function Home() {
 
             <div className="ml-10">
               <p className="text-[var(--foreground)]">
-                Hi, my name&apos;s Carson. I&apos;m a senior at UGA studying computer science with plans to graduate in may. 
-                In my free time I like to read, exercise, build legos, collect various knick knacks, and learn new things.
+                Hi, my name&apos;s Carson. I&apos;m a senior at UGA studying computer science with plans to graduate in May. 
+                In my free time, I like to read, exercise, build legos, collect various knickknacks, and learn new things.
               </p>
 
               <p className="mt-10">
-                My favorite thing to code is front-end for websites. I think its the perfect intersection of Computer Science and Creativity.
-                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, React, and I&apos;ve taken a web development course at UGA.
-                I also have experience in Java, C/C++, MongoDB, and a smattering of python.
+                My favorite thing to code is front-end for websites. I think it is the perfect intersection of Computer Science and Creativity.
+                I have learned languages and skills such as JavaScript, HTML, CSS/Tailwind, and React, and I&apos;ve taken a web development course at UGA.
+                I also have experience in Java, C/C++, MongoDB, and a smattering of Python.
               </p>
+
+              <p className="mt-10">
+               ! Note: This website is a work-in-progress so I am still updating it and working out some of its quirks. Thanks for visiting!
+              </p>
+
             </div>
 
           </div>
@@ -166,8 +171,8 @@ export default function Home() {
             <div className=" mr-6">
 
               <p className="mb-4 ml-6">
-                After taking a two year break from music, I auditioned for the UGA Redcoat Band before my junior year.
-                Sdince then, I&apos;ve been to every home football game, Jacksonville twice with two wins against Florida, Mercedez-Benz Stadium
+                After taking a two-year break from music to focus on school, I auditioned for the UGA Redcoat Band before my junior year.
+                Since then, I&apos;ve been to every home football game, Jacksonville twice with two wins against Florida, Mercedez-Benz Stadium
                 three times with an SEC Championship win, Miami to the Orange Bowl, and New Orleans to the Sugar Bowl.
                 I made many new friends and
                 a lifetime of memories.
@@ -181,7 +186,7 @@ export default function Home() {
                 
 
                 Recently, I joined DevDogs at UGA, which is a Google Developer Group. I am part of the front-end team
-                in a project developing a schedule building website for UGA students. The goal is to provide a feature-rich
+                in a project developing a schedule-building website for UGA students. The goal is to provide a feature-rich
                 schedule service, tailored to UGA.
 
                 
@@ -211,21 +216,23 @@ export default function Home() {
         <div className=" min-h-[400px] md:min-h-[200px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
           
           <div className="flex flex-col justify-center mx-10 h-[100%] ">
-            <h3 className="text-[var(--stripe-red)]">Pokémon Team Builder - Web Programming</h3>
+            <h3 className="text-[var(--stripe-red)]">Pokémon Team Builder - Course: Web Programming</h3>
             <p>
-            A CRUD Operations project with an open-ended topic. My team of 3 created a website that 
-            individual characteristics for the user to input. The user could then edit and delete their 
-            team, or view information about it. The team was saved to the database and displayed on 
-            the home screen. Front-end implemented with React along with HTML, CSS and JavaScript. 
-            Back-end implemented with Node.js, and MongoDB. Team collaboration with git.
+            A CRUD Operations project with an open-ended topic. My team of 3 created a website that allows users
+            to create a team of 6 Pokémon like in the games, and the ability to input and customize their
+            individual characteristics. The user could then edit and delete their 
+            team, or view information about it. The team was saved to the MongoDB database and displayed on 
+            the home screen. Front-end implemented with React along with HTML, CSS, and JavaScript. 
+            Back-end implemented with Node.js and MongoDB. Team collaboration with git.
             </p>
-            <h3 className="mt-[10%] text-blue-900">Cinema E-Booking System - Software Engineering</h3>
+            <h3 className="mt-[10%] text-blue-900">Cinema E-Booking System - Course: Software Engineering</h3>
             <p>
             A full-stack term project with a scrum-based workflow. My team of 4 built a website that 
             allowed users to book movies, which included picking showtimes and selecting seats. I was 
-            required custom components, conditional rendering, and communication between the ticket 
-            selection page and the checkout page. Front-end implemented with React, along with HTML,
-            CSS and JavaScript. Team collaboration with git.
+            responsible for building the seat selection page, among others, which
+            required custom components, conditional rendering, and communication between the previous ticket 
+            selection page and the next checkout page. Front-end implemented with React, along with HTML,
+            CSS, and JavaScript. Team collaboration with git.
             </p>
 
           </div>

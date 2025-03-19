@@ -111,9 +111,9 @@ p {
   font-family: "Orbitron", serif;
   
   transition: 0.1s ease-in-out;
-  background-color: #c7c3c0;
+  background-color: #efecdb;
   box-shadow: rgba(0, 0, 0, 0.424) 10px 10px 8px,
-    #ffffff 1.5px 1.5px 2px 0px inset, #c7c3c0 -3.2px -3.2px 8px 0px inset;
+    #ffffff 1.5px 1.5px 2px 0px inset, #efecdb -3.2px -3.2px 8px 0px inset;
 }
 
 .tv-button:active {
@@ -129,7 +129,7 @@ p {
   height: 6em;
   background-color: #3b3b3b;
   border-radius: 7px;
-  border-color: gray;
+  /* border-color: var(--stripe-red); */
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
@@ -142,7 +142,7 @@ p {
   height: 6em;
   background-color: var(--stripe-red);
   border-radius: 7px;
-  border-color: gray;
+  border-color: var(--stripe-red);
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
@@ -155,7 +155,7 @@ p {
   height: 6em;
   background-color: var(--stripe-yellow);
   border-radius: 7px;
-  border-color: gray;
+  border-color: var(--stripe-yellow);
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
@@ -168,7 +168,7 @@ p {
   height: 6em;
   background-color: var(--stripe-orange);
   border-radius: 7px;
-  border-color: gray;
+  border-color: var(--stripe-orange);
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
@@ -181,7 +181,7 @@ p {
   height: 6em;
   background-color: var(--stripe-blue);
   border-radius: 7px;
-  border-color: gray;
+  border-color: var(--stripe-blue);
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
@@ -194,7 +194,7 @@ p {
   height: 6em;
   background-color: var(--stripe-green);
   border-radius: 7px;
-  border-color: gray;
+  border-color: var(--stripe-green);
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.424) 5px 5px 8px inset;
 }
