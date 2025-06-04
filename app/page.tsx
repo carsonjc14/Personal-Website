@@ -26,8 +26,16 @@ export default function Home() {
     document.body.removeChild(link);
   };
 
+  const [showTooltip, setShowTooltip] = useState(false);
+  
+
   const copyText = (text: string) => {
     copy(text);
+    setShowTooltip(true);
+    setTimeout(() => {
+      setShowTooltip(false);
+    }, 2000);
+
   };
 
   const aboutRef = useRef<HTMLElement | null>(null);
@@ -272,6 +280,12 @@ export default function Home() {
                   <button onClick={() => copyText("carsoncooper0114@gmail.com")}><p>carsoncooper0114@gmail.com</p></button>
                 </div>
               </section>
+
+              {showTooltip && (
+                <div className="h-14 w-20 text-center absolute z-1 inset-y-[45%] border rounded-xl px-2 border-[var(--stripe-green)] bg-[var(--stripe-green)] ">
+                  <p className="text-wrap text-[#efecdb]">copied! :D</p>
+                  </div>
+              )}
               
               <hr className="mt-[2%] border border-[var(--stripe-blue)] border-2 border-dotted w-[75%]"></hr>
               
@@ -284,7 +298,7 @@ export default function Home() {
               </div>
 
               <p className="mt-[2%]">My Full Resume</p>
-              <button onClick={dlPDF} className="border rounded-xl px-2 border-[var(--stripe-red)]">
+              <button onClick={dlPDF} className="border rounded-xl px-2 border-[var(--stripe-red)] active:bg-[var(--stripe-red)] active:text-[#efecdb]">
                 <p>Download PDF</p>
               </button>
               
