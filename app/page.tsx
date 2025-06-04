@@ -212,10 +212,10 @@ export default function Home() {
 
       
       {/* Projects Page */}
-      <section ref={projectsRef} className="overflow-hidden relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[1000px] flex">
+      <section ref={projectsRef} className="overflow-hidden relative min-h-[100vh] grid grid-cols-5 bg-gray-800 w-[100vw] h-[100vh] flex">
         <div className=" min-h-[400px] md:min-h-[200px] row-start-1 col-span-4 rounded-[125] bg-[var(--background)]  aspect-video w-[100%] overflow-hidden my-auto ml-[5vw]  tv-border">
           
-          <div className="flex flex-col justify-center mx-10 h-[100%] ">
+          <div className="flex flex-col justify-center mx-10 h-[90%] ">
             <h3 className="text-[var(--stripe-red)]">Pokémon Team Builder - Course: Web Programming</h3>
             <p>
             A CRUD Operations project with an open-ended topic. My team of 3 created a website that allows users
@@ -257,7 +257,7 @@ export default function Home() {
           
           <div className=" flex flex-col justify-space items-center my-[6%]">
 
-            <h1 className="text-[500%] text-center  " >Let&apos;s Work Together!</h1>
+            <h1 className="text-[400%] text-center  " >Let&apos;s Work Together!</h1>
             
             {/* <section className="flex flex-col mt-20"> */}
               
@@ -276,7 +276,7 @@ export default function Home() {
               <hr className="mt-[2%] border border-[var(--stripe-blue)] border-2 border-dotted w-[75%]"></hr>
               
               <div className="mt-[2%] flex gap-4 row-start-2 col-start-1 col-span-2 items-center justify-center">
-                <a href="www.linkedin.com/in/carson-cooper-04a0382ba" target="_blank">
+                <a href="https://www.linkedin.com/in/carson-cooper-04a0382ba" target="_blank">
                   <p>LinkedIn</p></a>
                   <p>|</p>
                 <a href="https://www.instagram.com/carson_is_cooper/" target="_blanks">
